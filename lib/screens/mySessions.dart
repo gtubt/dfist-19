@@ -207,9 +207,9 @@ class _MySessionsScreenState extends State<MySessionsScreen>
       },
       child: Scaffold(
         appBar: AppBar(
-          title: Text("Your Schedule",
+          title: Text("Takvimim",
               style: TextStyle(
-                fontFamily: 'RedHatDisplay',
+                fontFamily: 'NunitoSans',
                 color: Color(0xff333d47),
                 fontSize: 20,
                 fontWeight: FontWeight.w700,
@@ -244,9 +244,9 @@ class _MySessionsScreenState extends State<MySessionsScreen>
                           child: Row(
                             children: <Widget>[
                               Text(
-                                "Halls",
+                                "Salon",
                                 style: TextStyle(
-                                  fontFamily: 'RedHatDisplay',
+                                  fontFamily: 'NunitoSans',
                                   color: Color(0xff373a42),
                                   fontSize: 16,
                                   fontWeight: FontWeight.w500,
@@ -271,9 +271,9 @@ class _MySessionsScreenState extends State<MySessionsScreen>
                           child: Row(
                             children: <Widget>[
                               Text(
-                                "Category",
+                                "Kategori",
                                 style: TextStyle(
-                                  fontFamily: 'RedHatDisplay',
+                                  fontFamily: 'NunitoSans',
                                   color: Color(0xff373a42),
                                   fontSize: 16,
                                   fontWeight: FontWeight.w500,
@@ -491,7 +491,7 @@ class _MySessionsScreenState extends State<MySessionsScreen>
                                 : Container(
                                     child: Center(
                                         child: Text(
-                                            "Please add Favorite some Sessions to see here!!")),
+                                            "Beğendiniz Konuşmaları Burada Görmek İçin Favorileyin!")),
                                   );
                             //
                           }

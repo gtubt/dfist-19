@@ -60,7 +60,7 @@ class RectangleButton extends StatelessWidget {
                                 style: TextStyle(
                                     color: Colors.white,
                                     fontWeight: FontWeight.w700,
-                                    fontFamily: "RedHatDisplay",
+                                    fontFamily: "NunitoSans",
                                     fontStyle: FontStyle.normal,
                                     fontSize: 18.0,
                                     letterSpacing: 0),
@@ -71,7 +71,7 @@ class RectangleButton extends StatelessWidget {
                                 style: TextStyle(
                                     color: Colors.white,
                                     fontWeight: FontWeight.w700,
-                                    fontFamily: "RedHatDisplay",
+                                    fontFamily: "NunitoSans",
                                     fontStyle: FontStyle.normal,
                                     fontSize: 18.0,
                                     letterSpacing: 0),
@@ -98,13 +98,16 @@ class RectangleButton extends StatelessWidget {
                     borderRadius: BorderRadius.only(
                       bottomRight: Radius.circular(11),
                     ),
-                    child: Container(
-                      width: width,
-                      height: height,
-                      child: new SizedBox(
-                        child: new FitImage(
-                          child: new Image.asset(image),
-                          fit: BoxFit.cover,
+                    child: Padding(
+                      padding: const EdgeInsets.only(right: 10.0, bottom: 5.0),
+                      child: Container(
+                        width: width,
+                        height: height,
+                        child: new SizedBox(
+                          child: new FitImage(
+                            child: new Image.asset(image),
+                            fit: BoxFit.cover,
+                          ),
                         ),
                       ),
                     ),

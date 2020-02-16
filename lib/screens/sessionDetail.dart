@@ -104,7 +104,7 @@ class _SessionDetailState extends State<SessionDetail> {
                               padding: const EdgeInsets.only(top: 150.0),
                               child: new Text(widget.session.data.description,
                                   style: TextStyle(
-                                    fontFamily: 'RedHatDisplay',
+                                    fontFamily: 'NunitoSans',
                                     color: Color(0xff333d47),
                                     fontSize: 16,
                                     fontWeight: FontWeight.w400,
@@ -130,10 +130,10 @@ class _SessionDetailState extends State<SessionDetail> {
                                     child: new Text(
                                         favList != null
                                             ? favList.contains(
-                                            widget.session.id)? "Remove From Schedule": "Add Your Schedule"
-                                            : "Add Your Schedule",
+                                            widget.session.id)? "Takvimimden Çıkar": "Takvimime Ekle"
+                                            : "Takvimime Ekle",
                                         style: TextStyle(
-                                          fontFamily: 'RedHatDisplay',
+                                          fontFamily: 'NunitoSans',
                                           color: Color(0xffffffff),
                                           fontSize: 16,
                                           fontWeight: FontWeight.w900,
@@ -169,7 +169,7 @@ class _SessionDetailState extends State<SessionDetail> {
                               padding: const EdgeInsets.only(top: 24.0),
                               child: new Text("Speaker",
                                   style: TextStyle(
-                                    fontFamily: 'RedHatDisplay',
+                                    fontFamily: 'NunitoSans',
                                     color: Color(0xff333d47),
                                     fontSize: 20,
                                     fontWeight: FontWeight.w700,
@@ -281,9 +281,9 @@ class _SessionDetailState extends State<SessionDetail> {
                   centerTitle: true,
                   elevation: 0.0,
                   backgroundColor: Colors.transparent,
-                  title: new Text("Session Detail",
+                  title: new Text("Konuşma Hakkında",
                       style: TextStyle(
-                        fontFamily: 'RedHatDisplay',
+                        fontFamily: 'NunitoSans',
                         color: Color(0xffffffff),
                         fontSize: 20,
                         fontWeight: FontWeight.w700,
@@ -324,7 +324,7 @@ class _SessionDetailState extends State<SessionDetail> {
                         top: 80.0, left: 24.0, right: 24.0),
                     child: new Text(widget.session.data.title,
                         style: TextStyle(
-                          fontFamily: 'RedHatDisplay',
+                          fontFamily: 'NunitoSans',
                           color: Color(0xffffffff),
                           fontSize: 20,
                           fontWeight: FontWeight.w700,
@@ -342,7 +342,7 @@ class _SessionDetailState extends State<SessionDetail> {
                         new TextSpan(
                             text: widget.time,
                             style: TextStyle(
-                                fontFamily: 'RedHatDisplay',
+                                fontFamily: 'NunitoSans',
                                 color: Color(0xffffffff),
                                 fontSize: 16,
                                 fontWeight: FontWeight.w500,
@@ -350,7 +350,7 @@ class _SessionDetailState extends State<SessionDetail> {
                         new TextSpan(
                             text: " // " + widget.track,
                             style: TextStyle(
-                                fontFamily: 'RedHatDisplay',
+                                fontFamily: 'NunitoSans',
                                 color: Color(0xffffffff),
                                 fontSize: 16,
                                 fontWeight: FontWeight.w700,

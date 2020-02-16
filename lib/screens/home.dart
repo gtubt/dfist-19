@@ -42,7 +42,7 @@ class _MainScreenState extends State<MainScreen> {
                     width: 40.0,
                     child: IconButton(
                       icon: new Image.asset('assets/info.png'),
-                      tooltip: 'Increase volume by 10',
+                      tooltip: 'Sesi 10 arttır',
                       onPressed: () {
                         setState(() {
                           Navigator.push(
@@ -55,10 +55,6 @@ class _MainScreenState extends State<MainScreen> {
                     ),
                   ),
                 ),
-                Image(
-                  image: new AssetImage('assets/logo.png'),
-                  width: 170,
-                ),
                 Padding(
                   padding: EdgeInsets.only(
                     bottom: 25,
@@ -70,7 +66,7 @@ class _MainScreenState extends State<MainScreen> {
                       visible: false,
                       child: IconButton(
                         icon: new Image.asset('assets/notifications.png'),
-                        tooltip: 'Increase volume by 10',
+                        tooltip: 'Sesi 10 arttır',
                         onPressed: () {
                           setState(() {});
                         },
@@ -108,12 +104,12 @@ class _MainScreenState extends State<MainScreen> {
                         color: Colors.transparent,
                         child: RectangleButton(
                           key: UniqueKey(),
-                          color: Color(0xff74d5de),
-                          text1: "Event",
-                          text2: "Schedule",
+                          color: Color(0xffc53b69),
+                          text1: "Etkinlik",
+                          text2: "Takvimi",
                           width: 80,
-                          height: 90,
-                          image: 'assets/newspaper.png',
+                          height: 80,
+                          image: 'assets/clock.png',
                           onPressed: () {
                             Navigator.push(
                               context,
@@ -127,12 +123,12 @@ class _MainScreenState extends State<MainScreen> {
                         color: Colors.transparent,
                         child: RectangleButton(
                           key: UniqueKey(),
-                          color: Color(0xfffecc92),
-                          text1: "All",
-                          text2: "Speakers",
-                          width: 60,
-                          height: 90,
-                          image: 'assets/question.png',
+                          color: Color(0xff6ab34d),
+                          text1: "Tüm",
+                          text2: "Konuşmacılar",
+                          width: 70,
+                          height: 70,
+                          image: 'assets/megaphone.png',
                           onPressed: () {
                             Navigator.push(
                               context,

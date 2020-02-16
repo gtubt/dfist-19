@@ -48,13 +48,18 @@ class _SessionItemState extends State<SessionItem>
 
   _getSessionSpaker() async {
     buffer.clear();
+    var cnt = 0;
     if (widget.speaker != null && widget.speaker.isNotEmpty) {
       for (String speaker in widget.speaker)
         API.getSessionSpaker(speaker).then((response) {
           setState(() {
             data = response;
             buffer.write(data.speakers[0].data.name);
-            if (widget.speaker.length > 1) buffer.write(" ");
+            if (widget.speaker.length - 1 == cnt)
+              buffer.write(" ");
+            else
+              buffer.write(", ");
+            cnt++;
           });
         });
     }
@@ -65,7 +70,6 @@ class _SessionItemState extends State<SessionItem>
   _getSF() async {
     SharedPreferences prefs = await SharedPreferences.getInstance();
     favList = prefs.getStringList("favList");
-    print(favList.length);
   }
 
 
@@ -132,7 +136,7 @@ class _SessionItemState extends State<SessionItem>
                               TextSpan(
                                   text: widget.time,
                                   style: TextStyle(
-                                      fontFamily: 'RedHatDisplay',
+                                      fontFamily: 'NunitoSans',
                                       color: Color(0xffffffff),
                                       fontSize: 14,
                                       fontWeight: FontWeight.w500,
@@ -140,7 +144,7 @@ class _SessionItemState extends State<SessionItem>
                               TextSpan(
                                   text: " // " + widget.track,
                                   style: TextStyle(
-                                      fontFamily: 'RedHatDisplay',
+                                      fontFamily: 'NunitoSans',
                                       color: Color(0xffffffff),
                                       fontSize: 14,
                                       fontWeight: FontWeight.w700,
@@ -158,7 +162,7 @@ class _SessionItemState extends State<SessionItem>
                             child: Text(
                               widget.title,
                               style: TextStyle(
-                                fontFamily: 'RedHatDisplay',
+                                fontFamily: 'NunitoSans',
                                 color: Color(0xffffffff),
                                 fontSize: 18,
                                 fontWeight: FontWeight.w700,
@@ -195,7 +199,7 @@ class _SessionItemState extends State<SessionItem>
                                         child: Text(
                                           buffer != null ? buffer.toString() : "",
                                           style: TextStyle(
-                                              fontFamily: 'RedHatDisplay',
+                                              fontFamily: 'NunitoSans',
                                               color: Color(0xffffffff),
                                               fontSize: 14,
                                               fontWeight: FontWeight.w500,

@@ -227,9 +227,9 @@ class _SessionsScreenState extends State<SessionsScreen>
               onPressed: (){
                 Navigator.pop(context);
               }),
-          title: Text("Sessions",
+          title: Text("Etkinlik Takvimi",
               style: TextStyle(
-                fontFamily: 'RedHatDisplay',
+                fontFamily: 'NunitoSans',
                 color: Color(0xff333d47),
                 fontSize: 20,
                 fontWeight: FontWeight.w700,
@@ -264,9 +264,9 @@ class _SessionsScreenState extends State<SessionsScreen>
                           child: Row(
                             children: <Widget>[
                               Text(
-                                "Halls",
+                                "Salon",
                                 style: TextStyle(
-                                  fontFamily: 'RedHatDisplay',
+                                  fontFamily: 'NunitoSans',
                                   color: Color(0xff373a42),
                                   fontSize: 16,
                                   fontWeight: FontWeight.w500,
@@ -291,9 +291,9 @@ class _SessionsScreenState extends State<SessionsScreen>
                           child: Row(
                             children: <Widget>[
                               Text(
-                                "Category",
+                                "Kategori",
                                 style: TextStyle(
-                                  fontFamily: 'RedHatDisplay',
+                                  fontFamily: 'NunitoSans',
                                   color: Color(0xff373a42),
                                   fontSize: 16,
                                   fontWeight: FontWeight.w500,
@@ -393,7 +393,7 @@ class _SessionsScreenState extends State<SessionsScreen>
                                                       "${_scheduleItem.startTime}-${_scheduleItem.endTime}",
                                                       style: TextStyle(
                                                         fontFamily:
-                                                            'RedHatDisplay',
+                                                            'NunitoSans',
                                                         color:
                                                             Color(0xff333d47),
                                                         fontSize: 12,

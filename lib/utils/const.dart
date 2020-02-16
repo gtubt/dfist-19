@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class Constants {
-  static String appName = "DevFest Istanbul";
+  static String appName = "GeekDay";
 
   //Colors for theme
   static Color lightPrimary = Color(0xfffcfcff);
@@ -50,39 +50,37 @@ class Constants {
 
   static String type(type) {
     switch (type) {
-      case "Mobile Technologies":
-        return "assets/red.png";
-      case "Flutter":
-        return "assets/red.png";
-      case "Design":
-        return "assets/red.png";
-      case "Machine Learning & AI":
-        return "assets/cloud.png";
-      case "Machine Learning & Ai":
-        return "assets/cloud.png";
-      case "Cloud":
-        return "assets/cloud.png";
-      case "Web Technologies":
-        return "assets/web.png";
-      case "Robotics & assistant":
-        return "assets/red.png";
-      case "Firebase":
-        return "assets/web.png";
+      case "Google Teknolojileri":
+        return "assets/empty.png";
+      case "Mobil Teknolojileri":
+        return "assets/empty.png";
+      case "Web Teknolojileri":
+        return "assets/empty.png";
+      case "Tasarım":
+        return "assets/empty.png";
+      case "Oyun Geliştirme":
+        return "assets/empty.png";
+      case "Yapay Zeka":
+        return "assets/empty.png";
+      case "Siber Güvenlik":
+        return "assets/empty.png";
+      case "Blockchain":
+        return "assets/empty.png";
+      case "IOT":
+        return "assets/empty.png";
       default:
-        return "assets/red.png";
+        return "assets/empty.png";
     }
   }
 
   static int hall(type) {
     switch (type) {
-      case "Bosphorus(Uniq Hall)":
+      case "Salon 1":
         return 0;
-      case "Galata Tower(Glass Room)":
+      case "Salon 2":
         return 1;
-      case "Maiden's Tower":
+      case "Salon 3":
         return 2;
-      case "Hagia Sophia":
-        return 3;
       default:
         return 0;
     }
@@ -90,26 +88,28 @@ class Constants {
 
   static Color color(type) {
     switch (type) {
-      case "Mobile Technologies":
-        return Color(0xff84E07A);
-      case "Flutter":
-        return Color(0xff84E07A);
-      case "Design":
-        return Color(0xffE07AB3);
-      case "Cloud":
-        return Color(0xff7A9DE0);
-      case "Machine Learning & AI":
-        return Color(0xffE17F7F);
-      case "Machine Learning & Ai":
-        return Color(0xffE17F7F);
-      case "Web Technologies":
-        return Color(0xffFECC92);
-      case "Robotics & assistant":
-        return Color(0xff7AD7E0);
-      case "Firebase":
-        return Color(0xffFECC92);
+      case "Google Teknolojileri":
+        return Color(0xff2397d4);
+      case "Mobil Teknolojileri":
+        return Color(0xff2397d4);
+      case "Web Teknolojileri":
+        return Color(0xff6ab34d);
+      case "Tasarım":
+        return Color(0xffec4436);
+      case "Oyun Geliştirme":
+        return Color(0xffe36c2d);
+      case "Yapay Zeka":
+        return Color(0xffa93287);
+      case "Siber Güvenlik":
+        return Color(0xff517ec0);
+      case "Blockchain":
+        return Color(0xff2ba953);
+      case "IOT":
+        return Color(0xfffabc14);
+      case "Keynote":
+        return Color(0xff00b9f0);
       default:
-        return Color(0xffF1823B);
+        return Color(0xffc53b69);
     }
   }
 }

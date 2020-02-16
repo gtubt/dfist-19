@@ -38,6 +38,7 @@
 **/android/gradlew.bat
 **/android/local.properties
 **/android/**/GeneratedPluginRegistrant.java
+**/android/app/google-services.json
 
 # iOS/XCode related
 **/ios/**/*.mode1v3
@@ -85,3 +86,4 @@ pubspec.lock
 # If you don't generate documentation locally you can remove this line.
 doc/api/
 
+ios/Flutter/flutter_export_environment.sh

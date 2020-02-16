@@ -24,13 +24,9 @@ dependencies:
   fit_image: ^0.1.2
   font_awesome_flutter: 8.5.0
   json_annotation: ^2.0.0
-  cached_network_image: 1.1.3
   jiffy: ^2.1.1
   marquee: ^1.3.1
-
-
-
-
+  cached_network_image: ^2.0.0
 
 dev_dependencies:
   flutter_launcher_icons: "^0.7.3"
@@ -47,16 +43,23 @@ flutter_icons:
 flutter:
   uses-material-design: true
   fonts:
-    - family: RedHatDisplay
+    - family: NunitoSans
       fonts:
-        - asset: fonts/RedHatDisplay-Black.ttf
-        - asset: fonts/RedHatDisplay-BlackItalic.ttf
-        - asset: fonts/RedHatDisplay-Bold.ttf
-        - asset: fonts/RedHatDisplay-BoldItalic.ttf
-        - asset: fonts/RedHatDisplay-Medium.ttf
-        - asset: fonts/RedHatDisplay-MediumItalic.ttf
-        - asset: fonts/RedHatDisplay-Regular.ttf
-        - asset: fonts/RedHatDisplay-RegularItalic.ttf
+        - asset: fonts/NunitoSans-Black.ttf
+        - asset: fonts/NunitoSans-BlackItalic.ttf
+        - asset: fonts/NunitoSans-Bold.ttf
+        - asset: fonts/NunitoSans-BoldItalic.ttf
+        - asset: fonts/NunitoSans-ExtraBold.ttf
+        - asset: fonts/NunitoSans-ExtraBoldItalic.ttf
+        - asset: fonts/NunitoSans-ExtraLight.ttf
+        - asset: fonts/NunitoSans-ExtraLightItalic.ttf
+        - asset: fonts/NunitoSans-Italic.ttf
+        - asset: fonts/NunitoSans-Light.ttf
+        - asset: fonts/NunitoSans-LightItalic.ttf
+        - asset: fonts/NunitoSans-Regular.ttf
+        - asset: fonts/NunitoSans-SemiBold.ttf
+        - asset: fonts/NunitoSans-SemiBoldItalic.ttf
+
   assets:
     - assets/logo.png
     - assets/info.png
@@ -76,7 +79,6 @@ flutter:
     - assets/people.png
     - assets/cat.png
     - assets/question.png
-    - assets/newspaper.png
     - assets/uniq.jpeg
     - assets/path.png
     - assets/app_logo.png
@@ -87,3 +89,8 @@ flutter:
     - assets/ic_adesso.png
     - assets/ic_pixery.png
     - assets/ic_gcloud.png
+    - assets/gtu_kongre_merkezi.jpg
+    - assets/empty.png
+    - assets/schedule.png
+    - assets/clock.png
+    - assets/megaphone.png

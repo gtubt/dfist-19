@@ -33,9 +33,9 @@ class _BottomSheetItemState extends State<BottomSheetItem> {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: <Widget>[
                 MaterialButton(
-                    child: new Text("Reset",
+                    child: new Text("Sıfırla",
                         style: TextStyle(
-                          fontFamily: 'RedHatDisplay',
+                          fontFamily: 'NunitoSans',
                           color: Color(0xff333d47),
                           fontSize: 16,
                           fontWeight: FontWeight.w700,
@@ -46,9 +46,9 @@ class _BottomSheetItemState extends State<BottomSheetItem> {
                 ),
                 Padding(
                   padding: const EdgeInsets.only(right: 30.0),
-                  child: new Text(widget.from == 0 ? "Halls" : "Categories",
+                  child: new Text(widget.from == 0 ? "Salon" : "Kategori",
                       style: TextStyle(
-                        fontFamily: 'RedHatDisplay',
+                        fontFamily: 'NunitoSans',
                         color: Color(0xff333d47),
                         fontSize: 20,
                         fontWeight: FontWeight.w900,
@@ -78,7 +78,7 @@ class _BottomSheetItemState extends State<BottomSheetItem> {
                   itemBuilder: (BuildContext context, int index) {
                     return Padding(
                       padding:
-                      const EdgeInsets.only(left: 16.0, right: 16.0),
+                      const EdgeInsets.only(left: 8.0, right: 8.0),
                       child: Container(
                           child: Center(
                             child: MultiSelectChip(
@@ -106,9 +106,9 @@ class _BottomSheetItemState extends State<BottomSheetItem> {
                       shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(14.0)),
                       child: Center(
-                        child: new Text("Apply Filter",
+                        child: new Text("Filtreyi Uygula",
                             style: TextStyle(
-                              fontFamily: 'RedHatDisplay',
+                              fontFamily: 'NunitoSans',
                               color: Color(0xffffffff),
                               fontSize: 14,
                               fontWeight: FontWeight.w900,
@@ -150,29 +150,34 @@ class _BottomSheetItemState extends State<BottomSheetItem> {
 //  FocusScope.of(context).requestFocus(new FocusNode());
 
   List<String> reportList = [
-    "Robotics & assistant",
-    "Mobile Technologies",
-    "Web Technologies",
-    "Cloud",
-    "Machine Learning",
-    "Firebase",
-    "Design",
+    "Google Teknolojileri",
+    "Mobil Teknolojileri",
+    "Web Teknolojileri",
+    "Tasarım",
+    "Oyun Geliştirme",
+    "Yapay Zeka",
+    "Siber Güvenlik",
+    "Blockchain",
+    "IOT",
+    "Diğer",
   ];
 
   List<String> halls = [
-    "Bosphorus(Uniq Hall)",
-    "Galata Tower(Glass Room)",
-    "Maiden's Tower",
-    "Hagia Sophia",
+    "Salon 1",
+    "Salon 2",
+    "Salon 3",
   ];
 
   List<Color> colorList = [
-    Color(0xff7AD7E0),
-    Color(0xff84E07A),
-    Color(0xffFECC92),
-    Color(0xff7A9DE0),
-    Color(0xffE17F7F),
-    Color(0xffFECC92),
-    Color(0xffE07AB3),
+    Color(0xff2397d4),
+    Color(0xff2397d4),
+    Color(0xff6ab34d),
+    Color(0xffec4436),
+    Color(0xffe36c2d),
+    Color(0xffa93287),
+    Color(0xff517ec0),
+    Color(0xff2ba953),
+    Color(0xfffabc14),
+    Color(0xffc53b69),
   ];
 }

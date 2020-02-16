@@ -85,7 +85,7 @@ class _SearchWidgetState extends State<SearchWidget> {
                 isVisible = false;
               },
               style: TextStyle(
-                fontFamily: 'RedHatDisplay',
+                fontFamily: 'NunitoSans',
                 color: Color(0xff80848b),
                 fontSize: 15,
                 fontWeight: FontWeight.w500,
@@ -106,7 +106,7 @@ class _SearchWidgetState extends State<SearchWidget> {
                   ),
                   borderRadius: BorderRadius.circular(5.0),
                 ),
-                hintText: "Search..",
+                hintText: "Ara...",
                 prefixIcon: Icon(
                   Icons.search,
                   color: Colors.grey,
@@ -122,7 +122,7 @@ class _SearchWidgetState extends State<SearchWidget> {
                   ),
                 ),
                 hintStyle: TextStyle(
-                  fontFamily: 'RedHatDisplay',
+                  fontFamily: 'NunitoSans',
                   color: Color(0xff80848b),
                   fontSize: 15,
                   fontWeight: FontWeight.w500,
