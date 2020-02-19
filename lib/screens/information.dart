@@ -20,11 +20,11 @@ class _InformationScreenState extends State<InformationScreen> {
     super.dispose();
   }
   final Event event = Event(
-    title: 'DevFest Istanbul 2019',
-    description: 'DevFest Istanbul 2019 at Uniq Hall',
-    location: 'Huzur, Maslak Ayazağa Cd. No:4, 34396 Sarıyer/İstanbul',
-    startDate: DateTime(2019, 11, 24, 09, 00),
-    endDate: DateTime(2019, 11, 24, 19, 30),
+    title: 'GeekDay 2020',
+    description: 'GeekDay 2020, Gebze Teknik Üniversitesinde',
+    location: 'Cumhuriyet, 2254. Sk. No:2, 41400 Gebze/Kocaeli',
+    startDate: DateTime(2020, 02, 29, 09, 30),
+    endDate: DateTime(2020, 02, 29, 18, 00),
   );
   @override
   Widget build(BuildContext context) {
@@ -50,7 +50,7 @@ class _InformationScreenState extends State<InformationScreen> {
               padding: const EdgeInsets.only(right: 24, left: 24, top: 16),
               child: Center(
                 child: new Text(
-                    "GeekDay, GTÜ Bilgisayar Topluluğu tarafından her yıl düzenlenen, alanında uzman konuşmacılar ve Türkiye'nin her yerinden yüzlerce katılımcıdan oluşan, bilgi ve ??? bir etkinliktir.",
+                    "GeekDay, GTÜ Bilgisayar Topluluğu tarafından her yıl düzenlenen, alanında uzman konuşmacılar ve Türkiye'nin her yerinden yüzlerce katılımcıdan oluşan, birçok oturumla bilgisayar dünyasının her alanına değinen bir etkinliktir.",
                     style: TextStyle(
                       fontFamily: 'NunitoSans',
                       color: Color(0xff333d47),
@@ -106,7 +106,7 @@ class _InformationScreenState extends State<InformationScreen> {
                       fontStyle: FontStyle.normal,
                     )),
                 new TextSpan(
-                    text: "??:?? ile ??:??",
+                    text: "09:30 ile 18:00",
                     style: TextStyle(
                       fontFamily: 'NunitoSans',
                       color: Color(0xff333d47),
@@ -232,13 +232,13 @@ class _InformationScreenState extends State<InformationScreen> {
                     ),
                   )),
                   onTap: () {
-                    _launchURL("https://goo.gl/maps/E8N3kNeed2cUA6db8");
+                    _launchURL("https://goo.gl/maps/RVNrcgRkYnoVm1Ko6");
                   }),
             ),
             Padding(
               padding: const EdgeInsets.only(right: 24, left: 24, top: 40),
               child: new Text(
-                "Event Organizer",
+                "Organizatör",
                 style: TextStyle(
                   fontFamily: 'NunitoSans',
                   color: Color(0xff333d47),
@@ -254,7 +254,7 @@ class _InformationScreenState extends State<InformationScreen> {
               child: Container(
                 width: 214,
                 child: Image.asset(
-                  "assets/gdg_istanbul_logo.png",
+                  "assets/gtubt.png",
                   fit: BoxFit.cover,
                 ),
               ),
@@ -263,7 +263,7 @@ class _InformationScreenState extends State<InformationScreen> {
               padding: const EdgeInsets.only(right: 24, left: 24, top: 16),
               child: Center(
                 child: new Text(
-                    "Google Developers Groups (GDG) - are open and volunteer geek communities that create exciting projects and share experience about Google technologies with a passion.",
+                    "Gebze Teknik Üniversitesi Bilgisayar Topluluğu, 2016'dan beri bilgisayar alanında çeşitli etkinlikler ve atölyeler düzenleyen bir öğrenci topluluğudur. 2017'den beri de her yıl belli zamanlarda GeekDay etkinliği ile bilgisayar dünyasından birçok meraklı katılımcı ve birçok bilgili konuşmacıyı bir araya getirmeye devam ediyor.",
                     style: TextStyle(
                       fontFamily: 'NunitoSans',
                       color: Color(0xff333d47),
@@ -294,27 +294,15 @@ class _InformationScreenState extends State<InformationScreen> {
                 children: <Widget>[
                   GestureDetector(
                       child: Container(
-                          height: 44.0, // height of the button
-                          width: 44.0, // width of the button
-                          child: Image.asset("assets/facebook.png",
-                              fit: BoxFit.fill)),
+                        height: 44.0, // height of the button
+                        width: 44.0, // width of the button
+                        child: Image.asset("assets/instagram.png",
+                            fit: BoxFit.fill),
+                      ),
                       onTap: () {
-                        _launchURL("https://www.facebook.com/GDGIstanbul/");
+                        _launchURL(
+                            "https://www.instagram.com/gtubt/?hl=tr");
                       }),
-                  Padding(
-                    padding: const EdgeInsets.only(left:24.0),
-                    child: GestureDetector(
-                        child: Container(
-                          height: 44.0, // height of the button
-                          width: 44.0, // width of the button
-                          child: Image.asset("assets/instagram.png",
-                          fit: BoxFit.fill),
-                        ),
-                        onTap: () {
-                          _launchURL(
-                              "https://www.instagram.com/gdgistanbul/?hl=tr");
-                        }),
-                  ),
                   Padding(
                     padding: const EdgeInsets.only(left:24.0),
                     child: GestureDetector(
@@ -325,7 +313,7 @@ class _InformationScreenState extends State<InformationScreen> {
                           Image.asset("assets/twitter.png", fit: BoxFit.fill),
                         ),
                         onTap: () {
-                          _launchURL("https://twitter.com/GDGIstanbul/");
+                          _launchURL("https://twitter.com/gtubt/");
                         }),
                   ),
                   Padding(
@@ -339,7 +327,7 @@ class _InformationScreenState extends State<InformationScreen> {
                         ),
                         onTap: () {
                           _launchURL(
-                              "https://www.linkedin.com/company/2943205/admin/");
+                              "https://www.linkedin.com/company/gtubt");
                         }),
                   ),
                   Padding(
@@ -353,7 +341,7 @@ class _InformationScreenState extends State<InformationScreen> {
                         ),
                         onTap: () {
                           _launchURL(
-                              "https://www.youtube.com/channel/UCY0yxph6mFEfzvY4_6GYArg");
+                              "https://www.youtube.com/channel/UCEwjKZ6jYATvvfNx_9AzUYw");
                         }),
                   )
                 ],
@@ -362,7 +350,7 @@ class _InformationScreenState extends State<InformationScreen> {
             Padding(
               padding: const EdgeInsets.only(right: 24, left: 24, top: 40),
               child: new Text(
-                "Event Sponsors",
+                "",
                 style: TextStyle(
                   fontFamily: 'NunitoSans',
                   color: Color(0xff333d47),
@@ -373,115 +361,6 @@ class _InformationScreenState extends State<InformationScreen> {
                 textAlign: TextAlign.left,
               ),
             ),
-            Padding(
-              padding: const EdgeInsets.only( left: 24.0,top: 16),
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.start,
-                children: <Widget>[
-                  GestureDetector(
-                      child: Container(
-                          height: 60.0, // height of the button
-                          child: Image.asset("assets/ic_peak.png",
-                              fit: BoxFit.fill)),
-                      onTap: () {
-                        _launchURL("https://peak.com/");
-                      }),
-                  Padding(
-                    padding: const EdgeInsets.only(left:24.0,top:16),
-                    child: GestureDetector(
-                        child: Container(
-                          height: 44.0, // height of the button
-                          child: Image.asset("assets/ic_google.png",
-                              fit: BoxFit.fill),
-                        ),
-                        onTap: () {
-                          _launchURL(
-                              "https://developers.google.com/");
-                        }),
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.only(left:24.0,top:16),
-                    child: GestureDetector(
-                        child: Container(
-                          height: 44.0, // height of the button
-                          child:
-                          Image.asset("assets/ic_zeplin.png", fit: BoxFit.fill),
-                        ),
-                        onTap: () {
-                          _launchURL("https://zeplin.io/");
-                        }),
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.only(left:24.0,top:16),
-                    child: GestureDetector(
-                        child: Container(
-                          height: 44.0, // height of the button
-                          child: Image.asset("assets/ic_adesso.png",
-                              fit: BoxFit.fill),
-                        ),
-                        onTap: () {
-                          _launchURL(
-                              "https://www.adesso.com.tr/en/index-3.jsp");
-                        }),
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.only(left:24.0,top:16),
-                    child: GestureDetector(
-                        child: Container(
-                          height: 35.0, // height of the button
-                          child:
-                          Image.asset("assets/ic_pixery.png", fit: BoxFit.fill),
-                        ),
-                        onTap: () {
-                          _launchURL(
-                              "https://www.pixerylabs.com/");
-                        }),
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.only(left:24.0,top:16),
-                    child: GestureDetector(
-                        child: Container(
-                          height: 80.0, // height of the button
-                          child:
-                          Image.asset("assets/ic_jetbrains.png", fit: BoxFit.fill),
-                        ),
-                        onTap: () {
-                          _launchURL(
-                              "https://www.jetbrains.com/");
-                        }),
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.only(left:24.0),
-                    child: GestureDetector(
-                        child: Container(
-                          height: 120.0, // height of the button
-                          child:
-                          Image.asset("assets/ic_gcloud.png", fit: BoxFit.fill),
-                        ),
-                        onTap: () {
-                          _launchURL(
-                              "https://cloud.google.com/");
-                        }),
-                  )
-                ],
-              ),
-            ),
-
-            Padding(
-              padding: const EdgeInsets.only(
-                  right: 24, left: 24, top: 16, bottom: 24),
-              child: Center(
-                child: new Text(
-                    "DevFest are non-profit, community driven events. Without the sponsors we can not make it. Please support our sponsors.",
-                    style: TextStyle(
-                      fontFamily: 'NunitoSans',
-                      color: Color(0xff333d47),
-                      fontSize: 16,
-                      fontWeight: FontWeight.w400,
-                      fontStyle: FontStyle.normal,
-                    )),
-              ),
-            )
           ],
         ),
       ),
