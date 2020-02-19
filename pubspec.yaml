@@ -61,37 +61,22 @@ flutter:
         - asset: fonts/NunitoSans-SemiBoldItalic.ttf
 
   assets:
-    - assets/logo.png
-    - assets/info.png
-    - assets/notifications.png
-    - assets/tickets.png
-    - assets/uniq_map.png
-    - assets/gdg_istanbul_logo.png
+    - assets/app_logo.png
+    - assets/clock.png
+    - assets/dribbble.png
+    - assets/empty.png
     - assets/facebook.png
     - assets/github.png
+    - assets/gtu_kongre_merkezi.jpg
+    - assets/gtubt.png
+    - assets/info.png
     - assets/instagram.png
     - assets/linkedin.png
+    - assets/megaphone.png
+    - assets/notifications.png
+    - assets/path.png
+    - assets/people.png
+    - assets/schedule.png
+    - assets/tickets.png
     - assets/twitter.png
     - assets/youtube.png
-    - assets/red.png
-    - assets/web.png
-    - assets/cloud.png
-    - assets/people.png
-    - assets/cat.png
-    - assets/question.png
-    - assets/uniq.jpeg
-    - assets/path.png
-    - assets/app_logo.png
-    - assets/ic_zeplin.png
-    - assets/ic_peak.png
-    - assets/ic_google.png
-    - assets/ic_jetbrains.png
-    - assets/ic_adesso.png
-    - assets/ic_pixery.png
-    - assets/ic_gcloud.png
-    - assets/gtu_kongre_merkezi.jpg
-    - assets/empty.png
-    - assets/schedule.png
-    - assets/clock.png
-    - assets/megaphone.png
-    - assets/gtubt.png
