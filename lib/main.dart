@@ -9,11 +9,7 @@ import 'screens/home.dart';
 import 'utils/const.dart';
 
 void main() async {
-  /*OneSignal.shared.init("b4322560-686d-4adf-93a8-974185356f0a", iOSSettings: {
-      OSiOSSettings.autoPrompt: false,
-      OSiOSSettings.inAppLaunchUrl: true
-    });
-    OneSignal.shared.setInFocusDisplayType(OSNotificationDisplayType.notification);*/
+
   runApp(MyApp());
 }
 
@@ -37,6 +33,7 @@ class _MyAppState extends State<MyApp> {
     imageCache.clear();
   }
 
+
   @override
   void reassemble() {
     SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(
@@ -59,6 +56,14 @@ class _MyAppState extends State<MyApp> {
 
   @override
   Widget build(BuildContext context) {
+    OneSignal.shared.init(
+        "964f4e10-1384-4082-bf86-b0c892c14d1e",
+        iOSSettings: {
+          OSiOSSettings.autoPrompt: false,
+          OSiOSSettings.inAppLaunchUrl: true
+        }
+    );
+    OneSignal.shared.setInFocusDisplayType(OSNotificationDisplayType.notification);
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: Constants.appName,
