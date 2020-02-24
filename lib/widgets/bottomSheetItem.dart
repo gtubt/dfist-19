@@ -163,9 +163,9 @@ class _BottomSheetItemState extends State<BottomSheetItem> {
   ];
 
   List<String> halls = [
-    "Salon 1",
-    "Salon 2",
-    "Salon 3",
+    "Havelsan 1",
+    "Havelsan 2",
+    "Burak Can Aşa",
   ];
 
   List<Color> colorList = [
