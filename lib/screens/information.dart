@@ -48,6 +48,16 @@ class _InformationScreenState extends State<InformationScreen> {
           children: <Widget>[
             Padding(
               padding: const EdgeInsets.only(right: 24, left: 24, top: 16),
+              child: Container(
+                width: 350,
+                child: Image.asset(
+                  "assets/geekday.png",
+                  fit: BoxFit.cover,
+                ),
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.only(right: 24, left: 24, top: 16),
               child: Center(
                 child: new Text(
                     "GeekDay, GTÜ Bilgisayar Topluluğu tarafından her yıl düzenlenen, alanında uzman konuşmacılar ve Türkiye'nin her yerinden yüzlerce katılımcıdan oluşan, birçok oturumla bilgisayar dünyasının her alanına değinen bir etkinliktir.",
