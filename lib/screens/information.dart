@@ -286,7 +286,7 @@ class _InformationScreenState extends State<InformationScreen> {
             Padding(
               padding: const EdgeInsets.only(right: 24, left: 24, top: 40),
               child: new Text(
-                "Social Media Accounts",
+                "Sosyal Medya Hesapları",
                 style: TextStyle(
                   fontFamily: 'NunitoSans',
                   color: Color(0xff333d47),

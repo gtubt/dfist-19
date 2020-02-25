@@ -167,7 +167,7 @@ class _SessionDetailState extends State<SessionDetail> {
                                 widget.session.data.speakers.length > 0,
                             child: Padding(
                               padding: const EdgeInsets.only(top: 24.0),
-                              child: new Text("Speaker",
+                              child: new Text("Konuşmacı",
                                   style: TextStyle(
                                     fontFamily: 'NunitoSans',
                                     color: Color(0xff333d47),
