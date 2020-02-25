@@ -30,19 +30,19 @@ class _SpeakerItemState extends State<SpeakerItem>
       padding: EdgeInsets.only(top: 5.0, bottom: 5.0),
       child: Align(
         child: ClipRRect(
-          borderRadius: BorderRadius.all(Radius.circular(12.0)),
+          borderRadius: BorderRadius.all(Radius.circular(5.0)),
           child: Container(
             child: GestureDetector(
               onTap: widget.onPressed,
               child: Card(
                 shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(12.0)),
+                    borderRadius: BorderRadius.circular(5.0)),
                 elevation: 3.0,
                 child: Stack(
                   children: <Widget>[
                     Align(
                       child: ClipRRect(
-                        borderRadius: BorderRadius.all(Radius.circular(12.0)),
+                        borderRadius: BorderRadius.all(Radius.circular(5.0)),
                         child:
                         CachedNetworkImage(
                             imageUrl: widget.img,
@@ -64,16 +64,16 @@ class _SpeakerItemState extends State<SpeakerItem>
                       alignment: Alignment.bottomLeft,
                       child: ClipRRect(
                         borderRadius: BorderRadius.only(
-                          bottomLeft: Radius.circular(10),
-                          bottomRight: Radius.circular(10),
+                          bottomLeft: Radius.circular(5),
+                          bottomRight: Radius.circular(5),
                         ),
                         child: Container(
-                          height: 52.0,
+                          height: 35.0,
                           color: Color(0xffcc333d47),
                           width: MediaQuery.of(context).size.width,
                           child: Padding(
                             padding: const EdgeInsets.only(
-                                top: 10, left: 16, right: 16),
+                                top: 7.5, left: 16, right: 16),
                             child: Text(
                               "${widget.name}",
                               style: TextStyle(
