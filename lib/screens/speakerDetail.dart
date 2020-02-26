@@ -208,8 +208,8 @@ class _SpeakerDetailState extends State<SpeakerDetail> {
                           : false,
                       speaker: _session.data.speakers,
                       title: _session.data.title,
-                      time: widget.time,
-                      track: widget.track,
+                      time: widget.speaker.data.shortBio,
+                      track: widget.speaker.data.country,
                       type: _session.data.tags[0],
                       onPressed: () {
                         Navigator.push(
@@ -218,8 +218,8 @@ class _SpeakerDetailState extends State<SpeakerDetail> {
                               builder: (context) => new SessionDetail(
                                     onPressed: () {},
                                     session: _session,
-                                    time: widget.time,
-                                    track: widget.track,
+                                    time: widget.speaker.data.shortBio,
+                                    track: widget.speaker.data.country,
                                   )),
                         );
                       },
